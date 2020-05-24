@@ -1,0 +1,7 @@
+<ul class="todo-list">
+
+    <!-- <app-todo-item *ngFor="let todo of todos"></app-todo-item> //for de angular -->
+    <app-todo-item *ngFor="let todoDie of todos | filtroTodo:filtroActual" [todo]="todoDie"></app-todo-item>
+    <!-- //al crear un valor 'todoDie' en el for de angular, se puede usar en el mismo elemento -->
+
+</ul>
